@@ -24,9 +24,9 @@ function NetworkOfBuilders() {
   ];
 
   return (
-    <div className="mb-20">
+    <div className="mb-20 container px-4 mx-auto">
       {/* Note */}
-      <div className="bg-white w-[600px] rounded-xl mx-auto text-center px-10 py-6 space-y-5 font-semibold mb-20">
+      <div className="bg-white lg:w-[600px] rounded-xl mx-auto text-center px-10 py-6 space-y-5 font-semibold mb-20">
         <p>
           "Nigeria and Africa has a massive network effect that have not be
           fully utilized. With Nigerians/Africans in every country and territory
@@ -47,9 +47,9 @@ function NetworkOfBuilders() {
         </p>
 
         {/* Carsd  */}
-        <div className="flex gap-5 px-72">
-          {cards.map((card) => (
-            <div className="flex-1 bg-white p-4 rounded-lg space-y-4">
+        <div className="flex flex-col lg:flex-row gap-5 lg:px-72">
+          {cards.map((card, i) => (
+            <div key={i} className="flex-1 bg-white p-4 rounded-lg space-y-4">
               <div className="space-y-1 text-sm">
                 <p className="font-bold text-base ">{card.title}</p>
                 <p>

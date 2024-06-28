@@ -26,24 +26,24 @@ function BlogAndResources() {
 
 
   return (
-    <div className="px-60">
+    <div className="container px-4 mx-auto lg:px-60">
       <div className="text-center space-y-3 mb-10">
         <p className="font-bold text-3xl">Blogs & Resources</p>
       </div>
 
-      <div className="flex gap-5 mb-6">
-        {vids.map((vid) => (
-          <div>
+      <div className="flex flex-col lg:flex-row gap-5 mb-6">
+        {vids.map((vid, i) => (
+          <div key={i}>
             <img src={vid.vid} alt="" />
           </div>
         ))}
       </div>
 
-      <div className="flex items-center gap-5 text-sm mb-8">
+      <div className="flex flex-col lg:flex-col items-center gap-8 lg:gap-5 text-sm mb-8">
         {books.map((book, i) => (
           <div key={i} className="flex">
             <div className="space-y-2">
-              <p className="font-semibold">{book.title}</p>
+              <p className="font-semibold text-base lg:text-sm">{book.title}</p>
               <p>{book.desc}</p>
             </div>
             <img src={book.book} alt="" className="h-16"/>

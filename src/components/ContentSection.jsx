@@ -18,10 +18,9 @@ function ContentSection() {
         <ServiceIncubation />
         <StudioPortfolio />
         <CoFound />
-        {/* <InvestorsNetwork /> */}
+        <InvestorsNetwork />
         <EquityJobs />
         <BlogAndResources />
-
       
     </div>
   );

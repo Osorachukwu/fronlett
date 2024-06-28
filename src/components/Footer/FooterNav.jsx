@@ -61,9 +61,9 @@ function FooterNav() {
 
   return (
     <div>
-      <div className="flex gap-8 justify-between text-lg my-20 border-t-2 border-b-2 py-5">
+      <div className="flex flex-col lg:flex-row gap-8 justify-between text-lg my-20 border-t-2 border-b-2 py-5">
         {/* the logo col */}
-        <div className="">
+        <div className="pl-10">
           <div>
             <img src={sincLogo} alt="Logo" />
             <div>
@@ -77,7 +77,7 @@ function FooterNav() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-10 text-white mb-10 w-100% border-r-2">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-white mb-10 w-100% border-r-2">
           {footerMenuenuData.map((menuLink, i) => (
             <div key={i} className="flex flex-col items-center">
               <div>
@@ -98,7 +98,7 @@ function FooterNav() {
 
         {/* second col */}
 
-      <div className="space-y-10">
+      <div className="space-y-10 ml-10">
         <div>
           <p>Location</p>
           <p>Abuja, Nigeria</p>

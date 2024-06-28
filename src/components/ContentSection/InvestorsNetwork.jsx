@@ -8,7 +8,7 @@ function InvestorsNetwork() {
     
   // ]
   return (
-    <div className="px-72">
+    <div className="container px-4 mx-auto lg:px-72 mb-20">
       <div className="text-center space-y-3 mb-10">
         <p className="font-bold text-3xl">SINC Investors Network</p>
         <p>
@@ -34,8 +34,8 @@ function InvestorsNetwork() {
           (Invest from $500 & above)
         </p>
 
-        <div>
-          {/* first-row */}
+        {/* <div>
+          👇first-row 
           <div className="flex border-t-2 border-b-2 divide-x-2 gap-5 text-sm">
             <div className="p-5">
               <p className="font-bold">Deal 1</p>
@@ -68,8 +68,8 @@ function InvestorsNetwork() {
            
             
           </div>
-          {/* second-row */}
-        </div>
+          👇second-row 
+        </div> */}
       </div>
     </div>
   );

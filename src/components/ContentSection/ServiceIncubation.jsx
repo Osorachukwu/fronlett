@@ -9,17 +9,17 @@ function ServiceIncubation() {
     {
       icon: triangleIcon,
       description:
-        "Most early-stage companies and pre-product startups cannot afford professional services especially those who don’t have family and friends’ network that can support",
+        "Most early-stage companies and pre-product startups cannot afford professional services especially those who dont have family and  network that can support",
     },
     {
       icon: diamondIcon,
       description:
-        "Most early-stage companies and pre-product startups cannot afford professional services especially those who don’t have family and friends’ network that can support",
+        "Most early-stage companies and pre-product startups cannot afford professional services especially those who dont have family and friends network that can support",
     },
     {
       icon: pentagonIcon,
       description:
-        "Most early-stage companies and pre-product startups cannot afford professional services especially those who don’t have family and friends &#39; network that can support",
+        "Most early-stage companies and pre-product startups cannot afford professional services especially those who dont have family and friends &#39; network that can support",
     },
   ];
 
@@ -30,7 +30,7 @@ function ServiceIncubation() {
   ];
 
   return (
-    <div className="mb-20">
+    <div className="mb-20 container px-4 mx-auto">
       <div className="text-center space-y-3 mb-10">
         <p className="font-bold text-3xl">Our Service Incubation Model</p>
         <p>
@@ -42,7 +42,7 @@ function ServiceIncubation() {
         </p>
       </div>
 
-      <div className="px-72">
+      <div className="lg:px-72">
         {/* Hypothesis */}
         <div className="py-8">
           <p className="font-semibold text-xl">
@@ -56,9 +56,9 @@ function ServiceIncubation() {
       </div>
 
       {/* Cards */}
-      <div className="flex gap-5 px-72">
-        {cards.map((card) => (
-          <div className="bg-white px-4 py-8 rounded-xl space-y-4">
+      <div className="flex flex-col lg:flex-row gap-5 lg:px-72">
+        {cards.map((card, i) => (
+          <div key={i} className="bg-white px-4 py-8 rounded-xl space-y-4">
             <div>
               <img src={card.icon} alt="Polygons" />
             </div>
@@ -70,7 +70,7 @@ function ServiceIncubation() {
       </div>
 
       {/* Case study */}
-      <div className="px-72">
+      <div className="lg:px-72">
         <div className="py-8">
           <p className="font-semibold text-xl">
             Case Study <br />{" "}
@@ -81,9 +81,9 @@ function ServiceIncubation() {
           </p>
         </div>
 
-        <div className="flex gap-3 mb-8">
-          {caseStudy.map((cases) => (
-            <div className="bg-white py-1 px-6 rounded-full border-2">
+        <div className="flex flex-col lg:flex-row gap-3 mb-8">
+          {caseStudy.map((cases, i) => (
+            <div key={i} className="bg-white py-1 px-6 rounded-full border-2">
               <p>{cases.title}</p>
             </div>
           ))}

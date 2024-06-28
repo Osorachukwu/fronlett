@@ -8,9 +8,9 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div>
+    <div className=''>
         <Header />
-        {/* <Hero /> */}
+        <Hero />
         <ContentSection />
         <Footer />
     </div>

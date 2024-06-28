@@ -54,7 +54,7 @@ function EquityJobs() {
   ];
 
   return (
-    <div className="px-60 mb-20">
+    <div className="container px-4 mx-auto lg:px-60 mb-20">
       <div className="text-center space-y-3 mb-10">
         <p className="font-bold text-3xl">Equity Jobs</p>
         <p>
@@ -62,7 +62,7 @@ function EquityJobs() {
         </p>
       </div>
 
-      <div className="flex gap-5 mb-8">
+      <div className="flex flex-col lg:flex-row gap-5 mb-8">
         {equityJobsItems.map((item, i) => (
           <div key={i} className="bg-white p-4 space-y-2 rounded-xl">
             <img src={item.logo} alt="" />

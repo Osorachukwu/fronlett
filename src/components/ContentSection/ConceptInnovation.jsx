@@ -20,7 +20,7 @@ function ConceptInnovation() {
   ];
 
   return (
-    <div className="mb-20">
+    <div className="mb-20 container px-4 mx-auto">
       <div className="text-center space-y-3 mb-10">
         <p className="font-bold text-3xl">Our Concept Innovations</p>
         <p>
@@ -30,9 +30,9 @@ function ConceptInnovation() {
         </p>
       </div>
 
-      <div className="flex gap-5 px-72 text-center">
-        {cards.map((card) => (
-          <div className="bg-white p-4 space-y-3 rounded-xl">
+      <div className="flex flex-col lg:flex-row gap-5 lg:px-72 text-center">
+        {cards.map((card, i) => (
+          <div key={i} className="bg-white p-6 space-y-3 rounded-xl">
             <p className="font-bold">{card.title}</p>
             <p>{card.description}</p>
           </div>

@@ -10,7 +10,7 @@ function AreaOfFocus() {
   ];
 
   return (
-    <div className="mb-20">
+    <div className="mb-20 container px-4 mx-auto">
       <div className="text-center space-y-3 mb-10">
         <p className="font-bold text-3xl">
           Our Area of Focus
@@ -22,9 +22,9 @@ function AreaOfFocus() {
         </p>
       </div>
 
-      <div className="flex px-72">
-        {cards.map((card) => (
-          <div className={`${card.color} px-5 py-3 space-y-8`}>
+      <div className="flex flex-col lg:flex-row lg:px-72">
+        {cards.map((card, i) => (
+          <div key={i} className={`${card.color} px-5 py-3 space-y-8`}>
             <p>{card.digit}</p>
             <p>{card.title}</p>
           </div>
